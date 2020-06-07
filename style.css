@@ -1,0 +1,162 @@
+/*margin: 0;
+padding: 0;
+
+.Background {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: normal;
+    text-decoration: yellowgreen;
+    text-shadow: 0 0 5px yellowgreen;
+}
+
+h2 {
+    font-size: 20px;
+    font-style: italic;
+    text-shadow: 0 0 5px black;
+    color: black;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    text-shadow: 0 0 2px black;
+    font-size: 18px;
+    color: black;
+    font-weight: inherit;
+    font-style: oblique;
+}*/
+
+
+html,
+body {
+    background-color: cornsilk;
+    /*background-color: lawngreen; */
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    font-weight: normal;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    background-position: center;
+    background-repeat: repeat-y;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: underline;
+}
+
+section {
+    width: 100%;
+    height: 95vh;
+    background-image: url(../Images/backgg.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 80%;
+}*/
+
+.Background {
+    background-image: url(../Images/backgg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.nav {
+    width: 100%;
+    height: auto;
+    background-color: ivory;
+    position: absolute;
+}
+
+.nav a {
+    text-decoration: none;
+    padding: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: normal;
+    color: sandybrown;
+    transition: ease-in;
+}
+
+a.active,
+.nav a:hover {
+    color: sienna;
+    text-decoration: underline darkgoldenrod;
+}
+
+.ME {
+    margin-top: 300px;
+    padding: 10px;
+    background-color: ivory;
+    width: 1000px;
+    height: 80px;
+    float: right;
+}
+
+.home {
+    color: sienna;
+    font-weight: bolder;
+    height: auto;
+    overflow-y: auto;
+    text-shadow: 0 0 10px silver;
+    text-align: left;
+}
+
+.more {
+    margin-top: 600px;
+    padding: 10px;
+    background-color: ivory;
+    width: 1000px;
+    height: 80px;
+    align-content: center;
+}
+
+.about h1,
+.skills h1,
+.project h1,
+.contact h1 {
+    color: black;
+    text-shadow: 0 0 10px gray;
+    background-color: ivory;
+    text-align: center;
+    height: auto;
+}
+
+.about p {
+    color: ivory;
+    font-style: italic;
+}
+
+.skills p {
+    color: ivory;
+    font-style: oblique;
+}
+
+.project p {
+    color: ivory;
+    font-style: italic;
+}
+
+.ps p {
+    color: red;
+    font-style: italic;
+}
+
+
+.contact a {
+    color: ivory;
+    font-style: oblique;
+    text-decoration: underline ivory;
+}
