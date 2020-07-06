@@ -42,7 +42,7 @@ if (!navigator.geolocation) {
         const longitude = position.coords.longitude;
         console.log(latitude);
         console.log(longitude);
-        var currentloc = "https://maps.googleapis.com/maps/api/geocode/json?latlng=" + latitude + "," + longitude + "&key=AIzaSyAikOGBw3sNCCKTQK_MP11RtLx6uTQVur8";
+        var currentloc = "https://maps.googleapis.com/maps/api/geocode/json?latlng=" + latitude + "," + longitude + "&key=";
         console.log(currentloc);
         fetch(currentloc)
             .then(response => {
@@ -60,7 +60,7 @@ if (!navigator.geolocation) {
 
 
 function getWeather(latitude, longitude) {
-    let weathapi = api + latitude + "&lon=" + longitude + "&appid=be5331faa75e14d6b22962005d27f936";
+    let weathapi = api + latitude + "&lon=" + longitude + "&appid=";
     console.log(weathapi);
 
     fetch(weathapi)
@@ -113,7 +113,7 @@ function getResult() {
     longi = place_s.geometry.location.lng();
     console.log(lati);
     console.log(longi);
-    const locapi = api + lati + "&lon=" + longi + "&appid=be5331faa75e14d6b22962005d27f936";
+    const locapi = api + lati + "&lon=" + longi + "&appid="";
     console.log(locapi);
 
     fetch(locapi)
@@ -147,7 +147,7 @@ function getResult() {
 }
 
 function next() {
-    const localapi = applicationpi + lati + "&lon=" + longi + "&appid=be5331faa75e14d6b22962005d27f936";
+    const localapi = applicationpi + lati + "&lon=" + longi + "&appid="";
     console.log(localapi);
 
     fetch(localapi)
@@ -178,7 +178,7 @@ function next() {
 
 function previous() {
     dat = (dat - 86400);
-    const localapi = history + lati + "&lon=" + longi + "&dt=" + dat + "&appid=be5331faa75e14d6b22962005d27f936";
+    const localapi = history + lati + "&lon=" + longi + "&dt=" + dat + "&appid=";
     console.log(localapi);
 
     fetch(localapi)
